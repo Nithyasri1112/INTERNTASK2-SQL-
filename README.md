@@ -1,14 +1,14 @@
-Task 2: Data Types, Constraints & Table Design
+# Task 2: Data Types, Constraints & Table Design
 🔹 Internship: SQL Developer Internship
 🔹 Task Name: Data Types, Constraints & Table Design
 
-🛠️ Tools Used
+# 🛠️ Tools Used
 
 MySQL Workbench
 
 MySQL (XAMPP)
 
-📂 Table Description
+# 📂 Table Description
 
 A students table was designed using appropriate data types and constraints such as:
 
@@ -20,7 +20,7 @@ UNIQUE
 
 AUTO_INCREMENT
 
-🧱 Table Creation
+# 🧱 Table Creation
 CREATE TABLE students (
     student_id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(100) NOT NULL,
@@ -31,21 +31,21 @@ CREATE TABLE students (
     admission_date DATE NOT NULL
 );
 
-🧪 Data Insertion
+# 🧪 Data Insertion
 Valid Data
 INSERT INTO students (name, email, date_of_birth, gender, department, admission_date)
 VALUES ('Nithya', 'nithya@gmail.com', '2003-12-11', 'F', 'CSE', '2022-08-01');
 
-🔧 Table Alterations
+# 🔧 Table Alterations
 Add a New Column
 ALTER TABLE students
 ADD phone_number VARCHAR(15);
 
-Rename a Column
+# Rename a Column
 ALTER TABLE students
 RENAME COLUMN phone_number TO mobile_number;
 
-Drop a Column
+# Drop a Column
 ALTER TABLE students
 DROP COLUMN gender;
 
